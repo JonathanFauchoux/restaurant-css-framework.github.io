@@ -176,6 +176,11 @@ header .jumbotron .thumbnail {
   -webkit-box-align: space-around;
       -ms-flex-align: space-around;
           align-items: space-around;
+  color: white;
+}
+
+.text-cadre {
+  color: white;
 }
 
 footer {
