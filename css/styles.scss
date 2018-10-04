@@ -20,6 +20,10 @@ body{
         position: absolute;
         right: 25px;
         top: 25px;
+          
+    }
+    .navbar-toggler-icon{
+        color: #fff;
     }
     
     img{
@@ -35,13 +39,16 @@ body{
         background: black;
         z-index: 9999;
         position: relative;
+        top: -10px;
+        
        
         li{
             text-align: center;
-            padding-top: 10px;
+            padding-top: 20px;
             list-style-type: none;
             position: relative;
-            width: 220px;;
+            width: 220px;
+            
              
          a{
             border: none;
@@ -324,7 +331,11 @@ footer{
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 20px 0px 20px 10px;;
+    padding: 20px 0px;
+}
+figure{
+    display: flex;
+    justify-content: center;
 }
 .pagination{
     display: flex; 
