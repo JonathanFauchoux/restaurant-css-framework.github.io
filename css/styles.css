@@ -355,7 +355,7 @@ footer ul li a:hover {
   z-index: 999;
 }
 
-section {
+.menu {
   background: black;
   padding: 40px 20px;
   margin: 0;
