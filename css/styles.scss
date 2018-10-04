@@ -12,12 +12,18 @@ body{
 
 .navbar{
     background: black;
-    height: 130px;
+    height: 110px;
     display: flex;
     margin: auto;
+
+    .navbar-toggler{
+        position: absolute;
+        right: 25px;
+        top: 25px;
+    }
     
     img{
-        padding-left: 50px;
+        padding-left: 40px;
         position: relative;
     }
     .navbar-nav{
@@ -25,16 +31,17 @@ body{
         flex-flow: row wrap;
         align-items: flex-start;
         padding-left: 50px;
-        padding-top:15px;
+     
         background: black;
         z-index: 9999;
         position: relative;
        
         li{
             text-align: center;
-            padding-left: 40px;
+            padding-top: 10px;
             list-style-type: none;
             position: relative;
+            width: 220px;;
              
          a{
             border: none;
@@ -45,7 +52,7 @@ body{
 
             border: 2px solid black;
             border-radius: 10px 10px;
-            width: 150px;
+            
             
             &:hover{
                 background: $colordarkred;
@@ -114,29 +121,32 @@ header{
     }
 }
 .division{
-    display:flex;
-    flex-direction: row nowrap;
-    margin: 0;
-    
-    
-}
-.slider{
-    margin:auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: space-around;    
-    color: white;
-      
-}
-.text-cadre{
-    color:white;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0;
+
+    .slider{
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        
+   
+    }
+    .paragraphe{
+        margin:auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right:50px;
+        color: #fff;
+    }
+    
 }
 footer{
     background: black;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
@@ -144,14 +154,13 @@ footer{
     width: 100%;
     ul{
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
         margin:0;
         padding:0;
 
         li{
+            display: flex;
             list-style-type: none;
-            text-decoration: none;
-            color: white;
             padding-left: 65px;
             &:nth-last-child(1){
                 padding-right: 95px;
@@ -166,23 +175,24 @@ footer{
             }
         }
     }
+    .mention{
+        display: flex;
+        justify-content: center;
+        p{
+            padding-left: 25px;
+            color: white;
+        }          
+        a{
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+            &:hover{
+                color:$colordarkred;
+            }
+        }    
+    }
 }
-.mention{
-    display: flex;
-    justify-content: center;
-    p{
-        padding-left: 25px;
-        color: white;
-    }          
-    a{
-        text-decoration: none;
-        color: white;
-        transition: 0.3s;
-        &:hover{
-            color:$colordarkred;
-        }
-    }    
-}
+
 
 
 /*resto*/
@@ -221,7 +231,10 @@ footer{
     padding: 40px 0px 40px 0px;
     position: relative;
     overflow: hidden;
-    
+    .global-img{
+        position: relative;
+        overflow: hidden;
+    }
     .card-body{
         position: relative;
         transition: 0.3s;
@@ -277,13 +290,14 @@ footer{
 .dl{
     display: flex; 
     justify-content: center;
-    padding: 40px 0px 40px 0;
+    
+    padding: 40px 30px 40px 0;
     
     p{
         color:white;
         font-size: 1.5em;
         border: 1px solid white;
-        width: 300px;
+        width: 320px;
         text-align: center;
         padding-left: 10px;
 
@@ -293,8 +307,8 @@ footer{
         border-left: 1px solid white;
         background: #fff;
         color: black;
-        
-        padding: 10px 40px 10px 40px;
+        width: 100%;
+        padding: 10px 40px 10px 48px;
         transition: 0.3s;
         
         }
@@ -308,9 +322,9 @@ footer{
 
 .photos{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-content: center;
-    padding: 20px 0;
+    padding: 20px 0px 20px 10px;;
 }
 .pagination{
     display: flex; 

@@ -12,15 +12,21 @@ body {
 
 .navbar {
   background: black;
-  height: 130px;
+  height: 110px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: auto;
 }
 
+.navbar .navbar-toggler {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+}
+
 .navbar img {
-  padding-left: 50px;
+  padding-left: 40px;
   position: relative;
 }
 
@@ -36,7 +42,6 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   padding-left: 50px;
-  padding-top: 15px;
   background: black;
   z-index: 9999;
   position: relative;
@@ -44,9 +49,10 @@ body {
 
 .navbar .navbar-nav li {
   text-align: center;
-  padding-left: 40px;
+  padding-top: 10px;
   list-style-type: none;
   position: relative;
+  width: 220px;
 }
 
 .navbar .navbar-nav li a {
@@ -57,7 +63,6 @@ body {
   background: linear-gradient(10deg, #940b0b, black);
   border: 2px solid black;
   border-radius: 10px 10px;
-  width: 150px;
 }
 
 .navbar .navbar-nav li a:hover {
@@ -157,30 +162,26 @@ header .jumbotron .thumbnail {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row nowrap;
-          flex-direction: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 0;
 }
 
-.slider {
+.division .slider {
   margin: auto;
   padding-top: 20px;
   padding-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: space-around;
-      -ms-flex-align: space-around;
-          align-items: space-around;
-  color: white;
+  padding-left: 20px;
 }
 
-.text-cadre {
-  color: white;
+.division .paragraphe {
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 50px;
+  color: #fff;
 }
 
 footer {
@@ -190,8 +191,8 @@ footer {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -207,17 +208,17 @@ footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
 footer ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   list-style-type: none;
-  text-decoration: none;
-  color: white;
   padding-left: 65px;
 }
 
@@ -236,7 +237,7 @@ footer ul li a:hover {
   color: #940b0b;
 }
 
-.mention {
+footer .mention {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,19 +246,19 @@ footer ul li a:hover {
           justify-content: center;
 }
 
-.mention p {
+footer .mention p {
   padding-left: 25px;
   color: white;
 }
 
-.mention a {
+footer .mention a {
   text-decoration: none;
   color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.mention a:hover {
+footer .mention a:hover {
   color: #940b0b;
 }
 
@@ -310,6 +311,11 @@ footer ul li a:hover {
       justify-content: space-around;
   background: black;
   padding: 40px 0px 40px 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-global .global-img {
   position: relative;
   overflow: hidden;
 }
@@ -383,14 +389,14 @@ footer ul li a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 40px 0px 40px 0;
+  padding: 40px 30px 40px 0;
 }
 
 .dl p {
   color: white;
   font-size: 1.5em;
   border: 1px solid white;
-  width: 300px;
+  width: 320px;
   text-align: center;
   padding-left: 10px;
 }
@@ -400,7 +406,8 @@ footer ul li a:hover {
   border-left: 1px solid white;
   background: #fff;
   color: black;
-  padding: 10px 40px 10px 40px;
+  width: 100%;
+  padding: 10px 40px 10px 48px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -414,11 +421,12 @@ footer ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding: 20px 0;
+  padding: 20px 0px 20px 10px;
 }
 
 .pagination {
