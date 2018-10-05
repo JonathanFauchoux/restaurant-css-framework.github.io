@@ -1,4 +1,6 @@
 $colordarkred: rgb(148, 11, 11);
+$fonttext: 'Roboto', sans-serif;;
+
 .row{
     margin: 0;
 }
@@ -63,6 +65,7 @@ body{
             
             &:hover{
                 background: $colordarkred;
+                border: 1px solid white;
             }
             }
         }    
@@ -89,6 +92,7 @@ header{
 
         p{
             text-align: center;
+            font-family: $fonttext;
         }
         h1{
             padding-top: 30px;
@@ -125,6 +129,9 @@ header{
         flex-flow: column nowrap;
         align-items: center;
         padding: 30px 20px 30px 20px;
+        p{
+            font-family: $fonttext;
+        }
     }
 }
 .division{
@@ -147,6 +154,9 @@ header{
         padding-bottom: 20px;
         padding-right:50px;
         color: #fff;
+        p{
+            font-family: $fonttext;
+        }
     }
     
 }
@@ -223,6 +233,9 @@ footer{
     align-items: center;
     padding-top: 35px;
     line-height: 110%;
+    p{
+        font-family: $fonttext;
+    }
 }
 .icon{
     color:white;
@@ -261,6 +274,7 @@ footer{
             background: #fff;
             padding: 0 10px;
             transition: 0.4s ;
+            font-family: $fonttext;
         }
     }
 }
@@ -293,11 +307,13 @@ footer{
     list-style-type: none;
     background: black;
     color: white;
+    p{
+    font-family: $fonttext;
+    }
 }
 .dl{
     display: flex; 
     justify-content: center;
-    
     padding: 40px 30px 40px 0;
     
     p{
@@ -307,7 +323,6 @@ footer{
         width: 320px;
         text-align: center;
         padding-left: 10px;
-
         
     a{
         text-decoration: none;

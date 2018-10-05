@@ -72,6 +72,7 @@ body {
 
 .navbar .navbar-nav li a:hover {
   background: #940b0b;
+  border: 1px solid white;
 }
 
 header {
@@ -107,6 +108,7 @@ header .jumbotron {
 
 header .jumbotron p {
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 header .jumbotron h1 {
@@ -161,6 +163,10 @@ header .jumbotron .thumbnail {
   padding: 30px 20px 30px 20px;
 }
 
+.annonce .caption p {
+  font-family: "Roboto", sans-serif;
+}
+
 .division {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,6 +193,10 @@ header .jumbotron .thumbnail {
   padding-bottom: 20px;
   padding-right: 50px;
   color: #fff;
+}
+
+.division .paragraphe p {
+  font-family: "Roboto", sans-serif;
 }
 
 footer {
@@ -302,6 +312,10 @@ footer .mention a:hover {
   line-height: 110%;
 }
 
+.text-resto p {
+  font-family: "Roboto", sans-serif;
+}
+
 .icon {
   color: white;
   font-size: 1.2em;
@@ -349,6 +363,7 @@ footer .mention a:hover {
   padding: 0 10px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  font-family: "Roboto", sans-serif;
 }
 
 .card-global:hover .card-img-top {
@@ -385,6 +400,10 @@ footer .mention a:hover {
   list-style-type: none;
   background: black;
   color: white;
+}
+
+.list-menu li p {
+  font-family: "Roboto", sans-serif;
 }
 
 .dl {
